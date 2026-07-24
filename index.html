@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DemavrinTeam — cybersecurity specialists. Audit, pentesting, infrastructure protection.">
+  <title>DEMAVRINTEAM | Cybersecurity</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="matrix-bg" aria-hidden="true"></canvas>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="DemavrinTeam" class="logo-img">
+        <span class="logo-text">DEMAVRINTEAM</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          SYSTEM SECURE
+        </div>
+        <h1>
+          <span class="hero-line">Digital Perimeter</span>
+          <span class="hero-line hero-accent">Defense</span>
+        </h1>
+        <p class="hero-subtitle">
+          Information security specialists.<br>
+          Audit, pentesting, and building resilient protection.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value" data-target="8">0</span>
+            <span class="stat-label">years experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-target="120">0</span>
+            <span class="stat-label">projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-target="0">0</span>
+            <span class="stat-label">incidents</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">root@demavrinteam:~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> nmap -sV target.local</p>
+          <p class="dim">Scanning ports... done.</p>
+          <p><span class="prompt">$</span> vuln-scan --deep</p>
+          <p class="success">[OK] Perimeter hardened.</p>
+          <p><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;about /&gt;</span>
+          <h2>About Us</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              We are a cybersecurity engineering team focused on proactive defense
+              and risk minimization. We work with organizations of every scale —
+              from startups to enterprise.
+            </p>
+            <p>
+              We help identify vulnerabilities before they are exploited,
+              build SOC processes, train teams, and implement
+              ISO 27001 / NIST standards.
+            </p>
+            <ul class="about-list">
+              <li>OSCP, CEH, CISSP</li>
+              <li>Red Team & Blue Team</li>
+              <li>Incident Response 24/7</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <div class="card-glow"></div>
+            <div class="card-inner">
+              <div class="avatar">
+                <img src="assets/logo.png" alt="DemavrinTeam emblem">
+              </div>
+              <h3>DemavrinTeam</h3>
+              <p class="role">Security Engineers</p>
+              <div class="status-row">
+                <span class="status-dot"></span>
+                Available for projects
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;services /&gt;</span>
+          <h2>Services</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Penetration Testing</h3>
+            <p>Web apps, networks, and API penetration testing. Full report with PoC and remediation guidance.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </div>
+            <h3>Security Audit</h3>
+            <p>Comprehensive infrastructure assessment, access policies, and regulatory compliance review.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+              </svg>
+            </div>
+            <h3>Incident Response</h3>
+            <p>Incident handling, digital forensics, recovery, and post-attack hardening.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3>Zero Trust</h3>
+            <p>Zero-trust architecture design: IAM, MFA, segmentation, and continuous monitoring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;skills /&gt;</span>
+          <h2>Stack & Expertise</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Offensive Security</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>SIEM / SOC</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Cloud Security (AWS/Azure)</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>DevSecOps</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Cryptography & PKI</span>
+              <span>82%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+        </div>
+        <div class="tools-row">
+          <span class="tool-tag">Burp Suite</span>
+          <span class="tool-tag">Metasploit</span>
+          <span class="tool-tag">Wireshark</span>
+          <span class="tool-tag">Splunk</span>
+          <span class="tool-tag">Kali Linux</span>
+          <span class="tool-tag">Terraform</span>
+          <span class="tool-tag">Docker</span>
+          <span class="tool-tag">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;contact /&gt;</span>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Ready to discuss your project. We respond within 24 hours.</p>
+            <div class="contact-links">
+              <a href="mailto:security@demavrinteam.dev" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                security@demavrinteam.dev
+              </a>
+              <a href="https://t.me/demavrinteam" class="contact-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                @demavrinteam
+              </a>
+              <a href="https://github.com/demavrinteam" class="contact-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.695-1.235-2.385-.42-.72-1.26-2.505-1.26-2.505s-.315-.63-.315-1.575c0-1.475.855-2.575 1.92-2.575.9 0 1.335.675 1.335 1.455 0 .885-.555 2.205-.84 3.435-.24 1.02.51 1.845 1.515 1.845 1.815 0 3.21-1.905 3.21-4.65 0-2.43-1.74-4.125-4.23-4.125-2.88 0-4.575 1.875-4.575 3.825 0 .75.285 1.56.645 2.01.075.09.075.165.045.255-.015.075-.045.3-.06.375-.015.12-.105.165-.24.12-1.005-.465-1.635-1.935-1.635-3.12 0-2.265 1.65-4.35 4.755-4.35 2.49 0 4.425 1.77 4.425 4.185 0 2.475-1.56 4.47-3.72 4.47-.735 0-1.425-.375-1.665-.825 0 0-.36 1.365-.45 1.725-.165.615-.615 1.395-.915 1.875.69.21 1.425.315 2.175.315 6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
+                github.com/demavrinteam
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Describe your task..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+            <p class="form-note" id="form-note" hidden>Message sent (demo mode).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" class="footer-logo" aria-hidden="true">
+        <p>&copy; 2026 DEMAVRINTEAM. All systems under control.</p>
+      </div>
+      <p class="footer-copyright">demavrin copyright</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
