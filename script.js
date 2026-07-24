@@ -1,3 +1,20 @@
+/*
+ *  ██████╗ ███████╗██╗   ██╗██████╗  █████╗ ███╗   ██╗
+ *  ██╔══██╗██╔════╝██║   ██║██╔══██╗██╔══██╗████╗  ██║
+ *  ██║  ██║█████╗  ██║   ██║██████╔╝███████║██╔██╗ ██║
+ *  ██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══██╗██╔══██║██║╚██╗██║
+ *  ██████╔╝███████╗ ╚████╔╝ ██║  ██║██║  ██║██║ ╚████║
+ *  ╚═════╝ ╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+ *
+ *  Author     : Devran Türköz
+ *  Role       : Software Engineering Student
+ *  University : Nişantaşı University
+ *  GitHub     : https://github.com/demavrin
+ *  Project    : Cybersec Visit Website
+ *  © 2026 Devran Türköz. All Rights Reserved.
+ */
+
+
 (function () {
   'use strict';
 
