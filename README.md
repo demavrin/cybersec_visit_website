@@ -8,7 +8,7 @@
 
 # 🛡️ Cybersec Visit Website
 
-A modern cybersecurity-themed landing page created as part of my learning journey.
+A modern cybersecurity-themed landing page created by myself as part of my learning journey.
 
 ## 🚀 About
 
